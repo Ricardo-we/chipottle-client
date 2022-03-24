@@ -30,4 +30,4 @@ function App() {
   );
 }
 export default App;
-export const BASE_URL = 'http://localhost:8000'
+export const BASE_URL = 'https://chipottle-grill-api.herokuapp.com'
