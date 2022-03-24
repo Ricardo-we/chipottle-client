@@ -1,0 +1,20 @@
+
+.main-nav-item {
+    color: var(--yellow);
+    border-bottom: 1px solid transparent;
+    transition: 500ms;
+}
+
+.main-nav-item:hover {
+    border-bottom: 1px solid var(--yellow);
+}
+
+.navbar-toggler-icon {
+    color: white;
+    
+}
+
+:root {
+    --yellow: #eeb204;
+    --red: #da0005;
+}

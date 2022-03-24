@@ -1,0 +1,49 @@
+.sidebar{
+    width: clamp(200px, 40vw, 400px);
+    height: 100vh;
+    position: fixed;
+    left: -500px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out 500ms;
+    align-items: flex-start;
+    justify-content: first baseline;
+    background-color: #484747
+}
+
+.sidebar-visible{ 
+    left: 0;
+}
+
+.sidebar-link {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    text-decoration: none;
+    padding: 20px 0;
+    color: white;
+    transition: ease-in 500ms; 
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.open-sidebar-btn {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.close-sidebar-btn {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    font-size: 18px;
+}

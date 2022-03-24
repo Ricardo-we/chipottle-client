@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.background-container {
+    background-image: url('../img/torta-2.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: -1000;
+}
+
+.homepage-btn {
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid var(--yellow);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    color: var(--yellow);
+    transition: 500ms;
+}
+
+.homepage-btn:hover {
+    background-color: var(--yellow);
+    color: white;
+}
+
+
+.main-wraper {
+    margin-top: 130px;
+}
+
+.homepage-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.home-card-item {
+    width: 50%;
+    height:  250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.home-card-img {
+    height: 100%;
+    object-fit: cover;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.images-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.gallery-img-container{
+    position: relative;    
+    min-width: 230px;
+    width: 330px;
+    margin: 30px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.gallery-img-container:hover > .img-overlay {
+    left: 0;
+    opacity: 1;
+    background-color: #eeb30478;
+}   
+
+.img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -300px;
+    top: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    height: 400px;
+    background-color: black;
+    margin-top: 120px;
+}
+
+.about-us-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: white;
+    width: 90%;
+    height: 200px;
+    background-color: var(--yellow);
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+.about-us-inner  > p{
+    font-size: 25px;
+}
+
+:root {
+    --yellow: #eeb204;
+    --red: #da0005;
+}
+
+@media screen and (max-width: 750px) {
+    .home-card-item{
+        width: 100%;
+    }
+
+    .about-us-inner {
+        font-size: 20px;
+        height: 300px;
+    }
+
+    .about-us-inner > p {
+        font-size: 16px;
+    }
+}
